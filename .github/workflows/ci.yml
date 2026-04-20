@@ -1,0 +1,23 @@
+name: CI learning
+
+on:
+    push:
+        branches: ['main']
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout version
+              uses: action/checkout@v4
+            
+            - name: Print meassage
+              run: echo "Hello,CICD"
+
+            - name: Run a script
+              run: |
+                echo "Running script..."
+                ls -la
+
+
