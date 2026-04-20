@@ -5,19 +5,19 @@ on:
         branches: ['main']
 
 jobs:
-    biild:
+    build:
         runs-on: ubuntu-latest
 
         steps:
             - name: Checkout version
-              steps: action.checkout@v4
+              uses: action/checkout@v4
             
             - name: Print meassage
-              steps: echo "Hello,CICD"
+              run: echo "Hello,CICD"
 
-            - name: run the script
-            run: |
-               echo "Running script..."
-               ls -la
+            - name: Run a script
+              run: |
+                echo "Running script..."
+                ls -la
 
 
