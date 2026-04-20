@@ -20,4 +20,12 @@ jobs:
                 echo "Running script..."
                 ls -la
 
+            - name: Check the File
+              run: cat hello.txt
+
+            - name: Check if running or not
+              run: |
+                echo "file not found"
+                ls -la
+
 
