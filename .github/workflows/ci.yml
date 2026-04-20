@@ -25,11 +25,11 @@ jobs:
 
             - name: Check if file found it ot not
               run: |
-                 if [-f hello.txt] then
-                  echo "successfully file read"
-                  cat hello.txt
+                 if [ -f hello.txt ] then
+                   echo "successfully file read"
+                   cat hello.txt
                  else
-                  echo "file not found"
+                   echo "file not found"
                  fi
 
 
